@@ -1,0 +1,9 @@
+{
+    "development": {
+      "username": "integer_user",
+      "password": "integer_pass",
+      "database": "integer_app",
+      "host": "localhost",
+      "dialect": "postgres"
+    }
+}
