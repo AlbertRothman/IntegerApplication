@@ -6,7 +6,7 @@ class IncrementingIntegerManger {
       if (result[1]) {
         return result[0];
       } else {
-        result = await IncrementingInteger.update({ userInt: parseInt(result[0].userInt) + 1 }, { where: { id: result[0].id }, returning: true, transaction: t});
+        result = await IncrementingInteger.update({ userInt: parseInt(result[0].userInt) + 1 }, { where: { id: result[0].id }, returning: true, transaction: t });
         return result[1][0];
       }
     });
