@@ -1,6 +1,7 @@
 // Dependancies
+require('./lib/error');
 const express = require('express');
-const Auth = require('./controllers/auth');
+const User = require('./controllers/user');
 const IncInt = require('./controllers/incrementing_integer');
 const bodyParser = require('body-parser');
 const https = require('https');
@@ -22,7 +23,7 @@ const app = express();
 app.use(bodyParser.json());
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 app.use(urlencodedParser);
-const auth = new Auth.Auth(app);
+const user = new User.User(app);
 const incInt = new IncInt.IncrementingIntegerController(app);
 app.listen(port, () => { console.log(`App listening on port ${port}`); });
 

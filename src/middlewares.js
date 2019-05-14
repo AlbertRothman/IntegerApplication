@@ -6,7 +6,6 @@ async function authorized (req, res, next) {
   const users = await User.findAll({ where: {
     apikey: uuid
   } });
-  // TODO: handle better
   if (!users.length) {
     res.status(401);
     res.send('fail');
