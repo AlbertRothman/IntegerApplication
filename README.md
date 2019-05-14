@@ -11,4 +11,5 @@ An Application for Getting Incremented Integers
 or you can install sequelize-cli  and pg globally with "npm install -g sequelize-cli pg" and then run the commands with:
 sequelize db:migrate  
 7.Finally run node src/app.  
-The responses wil be returned as a JSON object containing the integer and some additional information. The field that contains the integer is userInt.
+The responses wil be returned as a JSON object containing the integer and some additional information. The field that contains the integer is userInt.  
+8.To Run the Front End go to the src/frontend and run "npm start". Note that for the frontend to work the backend must also be running.
